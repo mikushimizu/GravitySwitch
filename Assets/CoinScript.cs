@@ -19,7 +19,6 @@ public class CoinScript : MonoBehaviour {
 			FindObjectOfType<GameManagerScript> ().AddPoint (1);
 			Destroy (this.gameObject);
 		}
-
 	}
 
 }

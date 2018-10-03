@@ -7,7 +7,7 @@ public class LowerWallScript : MonoBehaviour {
 	//private float speed = 2;
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, 10);
+		Destroy (gameObject, 20);
 	}
 
 	// Update is called once per frame

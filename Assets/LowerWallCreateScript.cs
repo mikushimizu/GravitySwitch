@@ -6,7 +6,7 @@ public class LowerWallCreateScript : MonoBehaviour {
 
 	public GameObject wall;
 	float timer = 0f;
-	float interval = 0.48f;
+	float interval = 0.98f;
 	// Use this for initialization
 	void Start () {
 		for (int x = 0; x < 12; x++) {
