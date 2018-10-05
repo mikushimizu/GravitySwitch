@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class FrontScript : MonoBehaviour {
 	public Text scoreText;
 	public Text highScoreText;
@@ -24,6 +23,7 @@ public class FrontScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision){
 		if (collision.gameObject.tag == "Wall") {
+			FindObjectOfType<GameManagerScript> ().Explosion ();
 			this.gameObject.SetActive(false);
 			player.gameObject.SetActive(false);
 			highScoreText.gameObject.SetActive (true);
@@ -33,8 +33,4 @@ public class FrontScript : MonoBehaviour {
 			UpperWallScript.speed = 0;
 		}
 	}
-	
-
-
-
 }

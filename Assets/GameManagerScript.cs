@@ -13,6 +13,8 @@ public class GameManagerScript : MonoBehaviour {
 	public GameObject player;
 	public GameObject explosion;
 
+	public AudioSource Bomb;
+
 	private int score = 0;
 	private int highScore;
 	private string highScoreKey = "highScore";
@@ -36,10 +38,12 @@ public class GameManagerScript : MonoBehaviour {
 			}
 		}
 		Debug.Log (gameover);
+
+		
 		
 	}
 	private void Initialize () {
-		score = 0;
+		score = 10;
 		highScore = PlayerPrefs.GetInt (highScoreKey, 0);
 	}
 
@@ -63,7 +67,10 @@ public class GameManagerScript : MonoBehaviour {
 	public void Save () {
 		PlayerPrefs.SetInt (highScoreKey, highScore);
 		PlayerPrefs.Save ();
-
 		Initialize ();
+	}
+
+	public void Explosion(){
+		Bomb.Play ();
 	}
 }

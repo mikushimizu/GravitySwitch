@@ -13,13 +13,14 @@ public class CoinScript : MonoBehaviour {
 		transform.position += -Vector3.right * UpperWallScript.speed * Time.deltaTime;
 		transform.Rotate (new Vector3 (2, 2, 2));
 	}
-
+	/*
 	void OnCollisionEnter(Collision collision){
 		if (collision.gameObject.tag == "Player") {
 			FindObjectOfType<GameManagerScript> ().AddPoint (1);
 			Destroy (this.gameObject);
 		}
 	}
+	*/
 
 }
 

@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 4668019042066776}
   m_Layer: 0
   m_Name: LowerWall1
-  m_TagString: Untagged
+  m_TagString: WallTouch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b75df15d7736ea448f8cc30d582e9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wall: {fileID: 1018746521646744}
 --- !u!114 &114627016658864310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -234,4 +233,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b75df15d7736ea448f8cc30d582e9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wall: {fileID: 1471435028683872}
